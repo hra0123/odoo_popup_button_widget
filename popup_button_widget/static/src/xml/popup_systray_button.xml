@@ -1,0 +1,7 @@
+<templates xml:space="preserve">
+    <t t-name="popup_button_widget.NoteSystrayButton" owl="1">
+        <button class="btn btn-light o_systray_item" t-on-click="openNotePopup" title="Quick Note">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+        </button>
+    </t>
+</templates>

@@ -1,0 +1,22 @@
+<templates xml:space="preserve">
+    <t t-name="popup_button_widget.NotePopupWidget" owl="1">
+        <div class="custom-chatter-style-popup position-fixed bg-white shadow rounded-top"
+             style="bottom: 0; right: 400px; width: 350px; z-index: 1050; border: 1px solid #ccc; height: 90%;">
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center p-2 border-bottom bg-light">
+                <h6 class="mb-0 text-primary">🔗 External Panel</h6>
+                <button type="button" class="btn-close" aria-label="Close" t-on-click="onClose"></button>
+            </div>
+            <!-- Iframe Body -->
+            <div style="position: relative; width: 100%; height: calc(100% - 50px);">
+                <iframe
+                    id="repeater"
+                    allow="autoplay *;microphone *"
+                    src="https://voxtronsandbox.voxvantage.com/agentdesktop/UniversalRepeater.jsp"
+                    style="width: 100%; height: 100%; border: none;"
+                    allowfullscreen="1"
+                ></iframe>
+            </div>
+        </div>
+    </t>
+</templates>
